@@ -54,6 +54,17 @@ The system follows a modular, API-based architecture:
 
 ---
 
+## 📸 Prototype Screenshots
+
+### Phishing Detection Output
+![Phishing Output](screenshots/phishing_output.png)
+
+### Backend / API Response
+![API Response](screenshots/api_response.png)
+
+*(Screenshots show the actual working prototype developed by the team.)*
+
+
 ## 🛠️ Tech Stack
 - Frontend: HTML, CSS, JavaScript (or your frontend framework)
 - Backend: Python
@@ -79,3 +90,4 @@ The system follows a modular, API-based architecture:
 
 ## 📎 Note
 This repository is actively maintained with regular commits to track development progress.
+
