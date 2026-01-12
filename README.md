@@ -1,93 +1,109 @@
-# HK-17 – Phishing Detection System
+HK-17 – Detect & Prevent Highly Sophisticated Phishing Campaigns Using AI
 
-This project is developed as part of the **Cyber Guardian Hackathon** under the problem statement:
+This project is developed as part of the Cyber Guardian Hackathon under the problem statement:
 
-**HK-17 – Detect & Prevent Highly Sophisticated Phishing Campaigns Using AI
-(Targeting Convenience Emails and Messages)**
+HK-17 – Detect & Prevent Highly Sophisticated Phishing Campaigns Using AI
+(Targeting Convenience Emails and Messages)
 
----
+📌 Problem Statement
 
-## 📌 Problem Statement
-Phishing attacks today are highly sophisticated and designed to closely resemble genuine emails and messages.
-Attackers exploit urgency, fear, and trust to trick users into revealing sensitive information such as
-credentials and financial details.
+Phishing attacks have evolved into highly sophisticated cyber threats that closely resemble legitimate emails and messages.
+Attackers exploit urgency, fear, trust, and authority to manipulate users into revealing sensitive information such as login credentials, OTPs, and financial details.
 
-Existing security systems struggle to detect these advanced phishing techniques effectively.
+Due to the increasing reliance on convenience emails and messages, many users fail to identify these attacks.
+Existing security systems struggle to detect such advanced phishing techniques, especially newly generated and behavior-based attacks.
 
----
+💡 Proposed Solution
 
-## 💡 Proposed Solution
-The proposed system detects phishing attacks using a **rule-based AI approach** that focuses on
-phishing behavior and intent rather than relying only on datasets.
+The proposed solution is a rule-based AI phishing detection system that focuses on phishing behavior and intent, rather than relying only on historical datasets.
 
 The system analyzes:
-- Email and message content
-- URL structure
-- Social engineering behavior patterns
 
-This approach helps detect even newly generated phishing attacks.
+Email and message content to detect urgency, fear, and impersonation
 
----
+URL structure to identify fake or suspicious links
 
-## 🏗️ System Architecture
-The system follows a modular, API-based architecture:
+Social engineering behavior patterns commonly used in phishing campaigns
 
-- Input Layer: Email / Message / URL
-- Analysis Layer:
-  - Text Analysis Module
-  - URL Analysis Module
-  - Behavior Analysis Module
-- Decision Layer:
-  - Risk scoring
-  - Final classification (Safe / Suspicious / Phishing)
-- Output Layer:
-  - Detection result with explanation
+This approach enables the system to detect both known and previously unseen phishing attacks effectively.
 
----
+🏗️ System Architecture
 
-## 🔄 Prototype Workflow
-1. User submits an email, message, or URL
-2. Input is analyzed by all modules in parallel
-3. Rule-based checks are applied
-4. Risk scores are combined
-5. Final phishing detection result is returned
+The system follows a modular, API-based architecture to ensure scalability and clarity.
 
----
+Architecture Layers:
 
-## 📸 Prototype Screenshots
+Input Layer: Email / Message / URL
 
-### Phishing Detection Output
-![Phishing Output](screenshots/phishing_output.png)
+Analysis Layer:
 
-### Backend / API Response
-![API Response](screenshots/api_response.png)
+Text Analysis Module
 
-*(Screenshots show the actual working prototype developed by the team.)*
+URL Analysis Module
 
+Behavior Analysis Module
 
-## 🛠️ Tech Stack
-- Frontend: HTML, CSS, JavaScript (or your frontend framework)
-- Backend: Python
-- API Framework: FastAPI
-- Detection Logic: Rule-based AI (Regex, pattern matching)
-- Version Control: Git & GitHub
+Decision Layer:
 
----
+Risk scoring mechanism
 
-## 🚀 Implementation Status
-- Frontend and backend implemented
-- Core phishing detection logic completed
-- Tested using sample phishing and legitimate inputs
-- Working prototype available
+Final classification (Safe / Suspicious / Phishing)
 
----
+Output Layer:
 
-## 👨‍💻 Team Members
-- R. Sanjay
-- R. Ranjith Kumar
+Detection result with explanation
 
----
+This design allows parallel analysis and faster phishing detection.
 
-## 📎 Note
-This repository is actively maintained with regular commits to track development progress.
+🔄 Prototype Workflow
 
+User submits an email, message, or URL
+
+Input is processed by all analysis modules in parallel
+
+Rule-based AI checks are applied in each module
+
+Risk scores are combined
+
+Final phishing detection result is generated with reasons
+
+The workflow ensures real-time and explainable detection.
+
+📸 Prototype Screenshots
+🔹 Phishing Detection Output
+
+🔹 Backend / API Response
+
+(Screenshots represent the actual working prototype developed by the team.)
+
+🛠️ Tech Stack
+
+Frontend: HTML, CSS, JavaScript
+
+Backend: Python
+
+API Framework: FastAPI
+
+Detection Logic: Rule-based AI (Regex, pattern matching)
+
+Version Control: Git & GitHub
+
+🚀 Implementation Status
+
+Frontend and backend implemented
+
+Core phishing detection logic completed
+
+Tested using phishing and legitimate sample inputs
+
+Working prototype successfully classifies threats
+
+👨‍💻 Team Members
+
+R. Sanjay
+
+R. Ranjith Kumar
+
+📎 Note for Evaluators
+
+This repository is actively maintained with regular commits to track implementation progress, documentation updates, and prototype improvements as part of the hackathon development process.
